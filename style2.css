@@ -1,0 +1,31 @@
+.front-card{
+    background-color: yellow;
+    text-align: center;
+
+}
+.back-card{
+    background-color: green;
+    text-align: center;
+}
+
+.back-card ,.front-card{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    margin-left: 500px;
+    margin-top: 220px;
+    backface-visibility: hidden;
+    justify-content: center;
+
+}
+.back-card{
+    background-color: #f44336; /* Back color */
+    transform: rotatey(180deg); /* Position the back side */
+}
+
+.debit-card , .inner-card{
+    
+  .card:hover .card-inner {
+    transform: rotateY(180deg); /* Full flip */
+  }
+}

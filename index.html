@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Debit Card</title>
+  <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+
+  <div class="card-container">
+    <div class="card">
+      <div class="front-card">
+        <div class="fc-tex">
+          <i class="fa-sharp fa-thin fa-font-case" style="color:white">
+            <p>BANK NAME</p>
+          </i>
+          <img src="image/1-removebg-preview (1).png" alt="">
+          <img src="image/Screenshot_2024-10-27_221030-removebg-preview.png" alt=""
+            style="margin-left: 330px; width: 180px; margin-top :-120px;">
+        </div>
+        <div class="tex">
+          <i class="fa-sharp fa-thin fa-font-case" style="color:white">
+            <p id="card-number">1234 5678 1234 </p>
+          </i>
+
+
+        </div>
+        <div class="num">
+          <i class="fa-sharp fa-thin fa-font-case" style="color:white">
+            <p style="font-size: 30px; margin-top: 0px; margin-right: 200px;" id="cvv">123</p>
+          </i>
+          <i class="fa-sharp fa-thin fa-font-case" style="color: white;">
+            <p>Expire Date <span style="font-size: 25px;" id="expiry-date">01/25</span></p>
+          </i>
+        </div>
+        <div class="cardholder">
+
+          <i class="fa-sharp fa-thin fa-font-case" style="color:white;">
+            <p id="cardholder-name">CARDHOLDER NAME</p>
+          </i>
+
+        </div>
+      </div>
+      <div class="card-back">
+        <div class="back">
+          <div class="customer">
+            <p>for customer service,call +123 456 789 OR +0 000 123 456</p>
+          </div>
+          <div class="black"></div>
+        </div>
+        <div class="white">
+          <p>123</p>
+        </div>
+        <div class="para">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel nam nihil quisquam eum corrupti at asperiores,
+            nesciunt fugit corporis ab, alias aliquam accusantium consectetur deserunt est. Enim delectus reprehenderit
+            tempora fuga voluptatibus nihil tempore adipisci dolor minima obcaecati atque, .</p>
+        </div>
+      </div>
+    </div>
+
+    <form id="card-form">
+      <label for="number">Card Number:</label>
+      <input type="text" id="number" maxlength="12" placeholder="1234 5678 1234"><br><br>
+
+      <label for="holder">Card Holder:</label>
+      <input type="text" id="holder" placeholder="your name"><br><br>
+
+      <label for="expiry">Expiry Date:</label>
+      <input type="text" id="expiry" placeholder="MM/YY"><br><br>
+
+      <label for="cvv">CVV:</label>
+      <input type="text" id="cvv-input" maxlength="3" placeholder="123"><br><br>
+
+      <button type="submit">Update Card</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
